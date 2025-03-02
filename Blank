@@ -1,0 +1,9 @@
+local player = game.Players.LocalPlayer  -- Get the local player
+local character = player.Character or player.CharacterAdded:Wait()  -- Wait for character to be added if not already present
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")  -- Get the HumanoidRootPart for teleportation reference
+
+-- Function to search in assets (game workspace, ReplicatedStorage, etc.) and folders recursively
+local function searchInAssets(parent)
+    -- Iterate through all children of the parent object
+    for _, obj in pairs(parent:GetChildren()) do
+        -- If the object is a Folder, call the search
