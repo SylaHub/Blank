@@ -1,0 +1,7 @@
+if game.PlaceId == 142823291 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SylaHub/Blank/refs/heads/main/Zynox%20Hub'))()
+elseif game.PlaceId == 15365802831 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SylaHub/Blank/refs/heads/main/Practice'))()
+else
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SylaHub/Blank/refs/heads/main/Universal'))()
+end
